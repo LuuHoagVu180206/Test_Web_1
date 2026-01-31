@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản Lý User</title>
+    <style>
+        body { font-family: sans-serif; max-width: 600px; margin: 2rem auto; padding: 0 1rem; }
+        .form-group { margin-bottom: 1rem; }
+        input { padding: 8px; width: 100%; box-sizing: border-box; }
+        button { padding: 10px 20px; background: #28a745; color: white; border: none; cursor: pointer; }
+        button:hover { background: #218838; }
+        .user-item { background: #f4f4f4; padding: 10px; margin-bottom: 5px; border-left: 4px solid #007bff; }
+    </style>
+</head>
+<body>
+    <h1>🚀 Ứng dụng Quản Lý User</h1>
+
+    <div style="background: #eee; padding: 20px; border-radius: 8px;">
+        <h3>Thêm User Mới</h3>
+        <form id="userForm">
+            <div class="form-group">
+                <input type="text" id="username" placeholder="Nhập tên người dùng" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Nhập email" required>
+            </div>
+            <div class="form-group">
+                <input type="number" id="age" placeholder="Nhập tuổi" required>
+            </div>
+            <button type="submit">Lưu vào Database</button>
+        </form>
+    </div>
+
+    <h3>Danh sách User hiện có:</h3>
+    <div id="userList">
+        <p>Đang tải...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
